@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Findlay Admission Portal Prototype</title>
+    <link type='text/css' href='jquery.mobile-1.0/jquery.mobile-1.0.css' rel='stylesheet'/>
+    <link type='text/css' href='css/jqm-docs.css' rel='stylesheet'/>
+
+    <script type='text/javascript' src='jquery.mobile-1.0/jquery-1.6.4.min.js'></script>
+    <script type='text/javascript' src='jquery.mobile-1.0/jquery.mobile-1.0.min.js'></script>
+
+	 <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.min.css" />
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.6/jQuery.Validate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#theForm").validate();
+        });
+</script>
+
+</head>
+
+<body>
+
+	<div data-role="header">
+		<a href="index.html" data-rel="back">Home</a>
+		<h2>Contact UF Admissions</h2>	
+    </div>
+    
+    <h1 id="jqm-logo"><img src="images/jquery-mobile-logo-small.png" alt="University of Findlay" /></h1>
+  	<div align="center">31000 N. Main St.Findlay, Ohio 45840-3653<br>
+        419-422-8313<br>
+        admissions.findlay.edu </div>
+        
+
+
+	
+		<form method="post" id="theForm">
+
+
+				<h3>Contact us!</h3>
+				<input type="text" class="required" name="first"  placeholder="First Name" autocapitalize="on" />
+                <input type="text" class="required" name="middle"  placeholder="Middle Initial" autocapitalize="on" />	                				  
+                <input type="text" class="required" name="last"  placeholder="Last Name" autocapitalize="on" />
+                <input type="text" class="required" name="add"  placeholder="Address" autocapitalize="on" />
+                <input type="text" class="required" name="city"  placeholder="City" autocapitalize="on" />
+                <input type="text" class="required" name="state"  placeholder="State / Province" autocapitalize="on" >
+                <input type="text" class="required" name="zip"  placeholder="Zip / Postal Code" />
+	            <input type="tel" class="required" name="phonenum"  placeholder="Phone" />
+	            <input type="email" class="required email"  name="email" placeholder="Email Address" />
+                <label for="select-choice-0" class="select">Please select the admissions area below that best applies to you.</label>
+                <select name="select-choice-0" id="select-choice-0">
+                    <option value="standard">First-Time Freshman</option>
+                    <option value="rush">Transfer Student</option>
+                    <option value="express">Graduate Student</option>
+                    <option value="overnight">International Student</option>
+                </select>
+	           <input type="submit" value="Submit">
+        </form>
+
+
+
+  </body>
+</html>
